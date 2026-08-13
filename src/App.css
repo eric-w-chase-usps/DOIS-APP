@@ -1,0 +1,11 @@
+.page { display: flex; justify-content: center; padding: 48px 16px; font-family: system-ui, sans-serif; }
+.card { width: 100%; max-width: 760px; height: 400px; border: 1px solid #039; border-radius: 8px; padding: 24px; background: #039;}
+.title { font-size: 20px; font-weight: 600; margin-bottom: 16px; color: #ececec; }
+@media screen and (max-width: 440px) {.decal { display: none !important;}}
+.subTitle { font-size: 16px; font-weight: 400; margin-bottom: 16px; color: #ececec; }
+label { display: block; font-size: 13px; margin-bottom: 4px; color: #444; }
+.input { width: 40%; padding: 8px 10px; margin-bottom: 12px; border-radius: 6px; border: 1px solid #ccc; box-sizing: border-box; color: #000; }
+.button { width: 30%; padding: 10px; border-radius: 6px; border: none; background: #0a875f; color: #fff; font-size: 16px; font-weight: 500; cursor: pointer; }
+.buttonDisabled { opacity: 0.6; cursor: not-allowed; }
+.error { color: #dc2626; font-size: 13px; margin-bottom: 12px; }
+.hint { font-size: 12px; color: #fff; margin-top: 12px; }
