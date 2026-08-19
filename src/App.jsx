@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { FaRegEnvelope } from "react-icons/fa";
 import uspsImg from "./assets/usps-transp-outline.png";
+import LandingPg from "./LandingPg";
 import './App.css'
 
 
@@ -63,15 +64,9 @@ export default function LoginWith2FA() {
     }
   };
 
+  
   if (step === "done") {
-    return (
-      <div className="page">
-        <div className="card">
-          <h2 className="title">You're logged in</h2>
-          <p>Welcome back, {username}.</p>
-        </div>
-      </div>
-    );
+    return <LandingPg />;
   }
 
 
@@ -137,6 +132,7 @@ export default function LoginWith2FA() {
               value={otp}
               onChange={(e) => setOtp(e.target.value)}
               maxLength={6}
+              placeholder='MFA'
               inputMode="numeric"
               autoComplete="one-time-code"
               required
